@@ -14,7 +14,6 @@ public class ScoreOfParentheses {
             if(chars[index]==40){
                 st[stIndex+1] = String.valueOf(chars[index]);
                 stIndex++;
-
             }else {
             //如果配对成功且中间是个数字，则将数字乘以2
                 if(stIndex>0 && st[stIndex-1].equals("(")&&!st[stIndex].equals("(")){
@@ -39,9 +38,7 @@ public class ScoreOfParentheses {
                     }else {
                         st[stIndex] = String.valueOf(i );
                     }
-
                 }
-
             }
             index++;
         }
